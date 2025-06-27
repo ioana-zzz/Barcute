@@ -154,6 +154,7 @@ public class MainWindowController implements IObserver{
                     pozGhicit.add(pos);
                     buttons[pos].setStyle("-fx-background-color: lime;");
                     buttons[pos].setText("B");
+                    text.setText("Alegere corecta!");
 
                     scor += 5;
                 }

@@ -36,7 +36,7 @@
         <columns>
           <TableColumn fx:id="nume" prefWidth="75.0" text="nickname" />
           <TableColumn fx:id="data" prefWidth="75.0" text="start date" />
-            <TableColumn fx:id="scorColumn" prefWidth="75.0" text="incercari" />
+            <TableColumn fx:id="scorColumn" prefWidth="75.0" text="scor" />
         </columns>
       </TableView>
    </children>

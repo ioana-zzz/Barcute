@@ -1,10 +1,8 @@
 package org.example;
 
+import org.example.Interfaces.IBarcaRepository;
 import org.example.Interfaces.IJucatorRepository;
 import org.example.Interfaces.IMeciRepository;
-import org.example.Repository.BarcaRepository;
-import org.example.Repository.JucatorRepository;
-import org.example.Repository.MeciRepository;
 
 import java.util.*;
 import java.util.concurrent.ExecutorService;

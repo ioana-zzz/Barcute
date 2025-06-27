@@ -46,10 +46,10 @@ public class MeciRepository implements IMeciRepository {
     }
 
 
-    public Optional<Meci> update(Meci proba) {
+    public Optional<Meci> update(Meci meci) {
         try (Session session = sessionFactory.openSession()) {
             session.beginTransaction();
-            Meci updated = (Meci) session.merge(proba);
+            Meci updated = (Meci) session.merge(meci);
             session.getTransaction().commit();
             return Optional.ofNullable(updated);
         }
@@ -58,12 +58,12 @@ public class MeciRepository implements IMeciRepository {
 
     public Optional<Meci> delete(Long id) {
         try (Session session = sessionFactory.openSession()) {
-            Meci proba = session.find(Meci.class, id);
-            if (proba != null) {
+            Meci meci = session.find(Meci.class, id);
+            if (meci != null) {
                 session.beginTransaction();
-                session.remove(proba);
+                session.remove(meci);
                 session.getTransaction().commit();
-                return Optional.of(proba);
+                return Optional.of(meci);
             }
             return Optional.empty();
         }

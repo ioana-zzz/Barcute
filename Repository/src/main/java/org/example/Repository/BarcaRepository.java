@@ -3,7 +3,7 @@ package org.example.Repository;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.example.IBarcaRepository;
+import org.example.Interfaces.IBarcaRepository;
 import org.example.JdbcUtils;
 import org.example.Barca;
 import org.springframework.stereotype.Repository;

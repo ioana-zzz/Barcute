@@ -1,6 +1,6 @@
-package org.example;
+package org.example.Interfaces;
 
-import org.example.Interfaces.IRepository;
+import org.example.Barca;
 
 public interface IBarcaRepository extends IRepository<Long, Barca> {
 }

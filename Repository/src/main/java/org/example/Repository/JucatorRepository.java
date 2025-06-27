@@ -19,15 +19,15 @@ public class JucatorRepository implements IJucatorRepository {
         this.sessionFactory = sessionFactory;
     }
 
-    public Optional<Jucator> save(Jucator proba) {
+    public Optional<Jucator> save(Jucator jucator) {
         try (Session session = sessionFactory.openSession()) {
             session.beginTransaction();
-            session.persist(proba);
+            session.persist(jucator);
             session.getTransaction().commit();
             return Optional.empty();
         } catch (Exception e) {
             e.printStackTrace();
-            return Optional.of(proba);
+            return Optional.of(jucator);
         }
     }
 
@@ -46,10 +46,10 @@ public class JucatorRepository implements IJucatorRepository {
     }
 
 
-    public Optional<Jucator> update(Jucator proba) {
+    public Optional<Jucator> update(Jucator jucator) {
         try (Session session = sessionFactory.openSession()) {
             session.beginTransaction();
-            Jucator updated = (Jucator) session.merge(proba);
+            Jucator updated = (Jucator) session.merge(jucator);
             session.getTransaction().commit();
             return Optional.ofNullable(updated);
         }
@@ -58,12 +58,12 @@ public class JucatorRepository implements IJucatorRepository {
 
     public Optional<Jucator> delete(Long id) {
         try (Session session = sessionFactory.openSession()) {
-            Jucator proba = session.find(Jucator.class, id);
-            if (proba != null) {
+            Jucator jucator = session.find(Jucator.class, id);
+            if (jucator != null) {
                 session.beginTransaction();
-                session.remove(proba);
+                session.remove(jucator);
                 session.getTransaction().commit();
-                return Optional.of(proba);
+                return Optional.of(jucator);
             }
             return Optional.empty();
         }

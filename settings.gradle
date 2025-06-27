@@ -1,0 +1,8 @@
+rootProject.name = 'Barcuta'
+
+include 'Domain'
+include 'Repository'
+include 'Services'
+include 'Server'
+include 'Network'
+include 'Client'

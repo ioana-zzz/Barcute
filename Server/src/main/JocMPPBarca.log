@@ -1,0 +1,701 @@
+2025-06-27 16:06:58 INFO  org.example.JsonProtocol.ProxyJson 128 login - Login attempt with username: ana
+2025-06-27 16:06:58 INFO  org.example.JsonProtocol.ProxyJson 61 initializeConnection - Connection initialized
+2025-06-27 16:06:58 INFO  org.example.JsonProtocol.ProxyJson 80 sendRequest - Sending request: Request{type='LOGIN', data=org.example.DTO.LoginDTO@79621601}
+2025-06-27 16:06:58 INFO  org.example.JsonProtocol.ProxyJson 85 sendRequest - Request sent
+2025-06-27 16:06:58 INFO  org.example.JsonProtocol.ProxyJson$ReaderThread 218 run - Response received: {"type":"ERROR","data":"Index 0 out of bounds for length 0"}
+2025-06-27 16:06:58 DEBUG org.example.JsonProtocol.ProxyJson$ReaderThread 225 run - response received Response{type='ERROR', data=Index 0 out of bounds for length 0}
+2025-06-27 16:06:58 ERROR org.example.JsonProtocol.ProxyJson 150 login - Error during login: "Index 0 out of bounds for length 0" java.lang.Exception: "Index 0 out of bounds for length 0"
+	at org.example.JsonProtocol.ProxyJson.login(ProxyJson.java:140) ~[Network-1.0-SNAPSHOT.jar:?]
+	at org.example.LoginController.login(LoginController.java:63) ~[main/:?]
+	at org.example.LoginController.lambda$initialize$0(LoginController.java:51) ~[main/:?]
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:232) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:189) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49) ~[javafx-base-21.0.5-win.jar:?]
+	at javafx.event.Event.fireEvent(Event.java:198) ~[javafx-base-21.0.5-win.jar:?]
+	at javafx.scene.Node.fireEvent(Node.java:8875) ~[javafx-graphics-21.0.5-win.jar:?]
+	at javafx.scene.control.Button.fire(Button.java:203) ~[javafx-controls-21.0.5-win.jar:?]
+	at com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:207) ~[javafx-controls-21.0.5-win.jar:?]
+	at com.sun.javafx.scene.control.inputmap.InputMap.handle(InputMap.java:274) ~[javafx-controls-21.0.5-win.jar:?]
+	at com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:247) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:232) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:189) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54) ~[javafx-base-21.0.5-win.jar:?]
+	at javafx.event.Event.fireEvent(Event.java:198) ~[javafx-base-21.0.5-win.jar:?]
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3984) ~[javafx-graphics-21.0.5-win.jar:?]
+	at javafx.scene.Scene.processMouseEvent(Scene.java:1890) ~[javafx-graphics-21.0.5-win.jar:?]
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2708) ~[javafx-graphics-21.0.5-win.jar:?]
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:411) ~[javafx-graphics-21.0.5-win.jar:?]
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:301) ~[javafx-graphics-21.0.5-win.jar:?]
+	at java.security.AccessController.doPrivileged(AccessController.java:400) ~[?:?]
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:450) ~[javafx-graphics-21.0.5-win.jar:?]
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:424) ~[javafx-graphics-21.0.5-win.jar:?]
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:449) ~[javafx-graphics-21.0.5-win.jar:?]
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:551) ~[javafx-graphics-21.0.5-win.jar:?]
+	at com.sun.glass.ui.View.notifyMouse(View.java:937) ~[javafx-graphics-21.0.5-win.jar:?]
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method) ~[javafx-graphics-21.0.5-win.jar:?]
+	at com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:185) ~[javafx-graphics-21.0.5-win.jar:?]
+	at java.lang.Thread.run(Thread.java:1575) [?:?]
+
+2025-06-27 16:07:58 INFO  org.example.JsonProtocol.ProxyJson 128 login - Login attempt with username: ana
+2025-06-27 16:07:58 INFO  org.example.JsonProtocol.ProxyJson 61 initializeConnection - Connection initialized
+2025-06-27 16:07:58 INFO  org.example.JsonProtocol.ProxyJson 80 sendRequest - Sending request: Request{type='LOGIN', data=org.example.DTO.LoginDTO@237c3da7}
+2025-06-27 16:07:58 INFO  org.example.JsonProtocol.ProxyJson 85 sendRequest - Request sent
+2025-06-27 16:07:58 INFO  org.example.JsonProtocol.ProxyJson$ReaderThread 218 run - Response received: {"type":"ERROR","data":"Index 0 out of bounds for length 0"}
+2025-06-27 16:07:58 DEBUG org.example.JsonProtocol.ProxyJson$ReaderThread 225 run - response received Response{type='ERROR', data=Index 0 out of bounds for length 0}
+2025-06-27 16:07:58 ERROR org.example.JsonProtocol.ProxyJson 150 login - Error during login: "Index 0 out of bounds for length 0" java.lang.Exception: "Index 0 out of bounds for length 0"
+	at org.example.JsonProtocol.ProxyJson.login(ProxyJson.java:140) ~[Network-1.0-SNAPSHOT.jar:?]
+	at org.example.LoginController.login(LoginController.java:63) ~[main/:?]
+	at org.example.LoginController.lambda$initialize$0(LoginController.java:51) ~[main/:?]
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:232) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:189) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49) ~[javafx-base-21.0.5-win.jar:?]
+	at javafx.event.Event.fireEvent(Event.java:198) ~[javafx-base-21.0.5-win.jar:?]
+	at javafx.scene.Node.fireEvent(Node.java:8875) ~[javafx-graphics-21.0.5-win.jar:?]
+	at javafx.scene.control.Button.fire(Button.java:203) ~[javafx-controls-21.0.5-win.jar:?]
+	at com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:207) ~[javafx-controls-21.0.5-win.jar:?]
+	at com.sun.javafx.scene.control.inputmap.InputMap.handle(InputMap.java:274) ~[javafx-controls-21.0.5-win.jar:?]
+	at com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:247) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:232) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:189) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54) ~[javafx-base-21.0.5-win.jar:?]
+	at javafx.event.Event.fireEvent(Event.java:198) ~[javafx-base-21.0.5-win.jar:?]
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3984) ~[javafx-graphics-21.0.5-win.jar:?]
+	at javafx.scene.Scene.processMouseEvent(Scene.java:1890) ~[javafx-graphics-21.0.5-win.jar:?]
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2708) ~[javafx-graphics-21.0.5-win.jar:?]
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:411) ~[javafx-graphics-21.0.5-win.jar:?]
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:301) ~[javafx-graphics-21.0.5-win.jar:?]
+	at java.security.AccessController.doPrivileged(AccessController.java:400) ~[?:?]
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:450) ~[javafx-graphics-21.0.5-win.jar:?]
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:424) ~[javafx-graphics-21.0.5-win.jar:?]
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:449) ~[javafx-graphics-21.0.5-win.jar:?]
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:551) ~[javafx-graphics-21.0.5-win.jar:?]
+	at com.sun.glass.ui.View.notifyMouse(View.java:937) ~[javafx-graphics-21.0.5-win.jar:?]
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method) ~[javafx-graphics-21.0.5-win.jar:?]
+	at com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:185) ~[javafx-graphics-21.0.5-win.jar:?]
+	at java.lang.Thread.run(Thread.java:1575) [?:?]
+
+2025-06-27 16:08:00 INFO  org.example.JsonProtocol.ProxyJson 128 login - Login attempt with username: ana
+2025-06-27 16:08:00 INFO  org.example.JsonProtocol.ProxyJson 61 initializeConnection - Connection initialized
+2025-06-27 16:08:00 INFO  org.example.JsonProtocol.ProxyJson 80 sendRequest - Sending request: Request{type='LOGIN', data=org.example.DTO.LoginDTO@618bb780}
+2025-06-27 16:08:00 INFO  org.example.JsonProtocol.ProxyJson 85 sendRequest - Request sent
+2025-06-27 16:08:00 INFO  org.example.JsonProtocol.ProxyJson$ReaderThread 218 run - Response received: {"type":"ERROR","data":"Index 0 out of bounds for length 0"}
+2025-06-27 16:08:00 DEBUG org.example.JsonProtocol.ProxyJson$ReaderThread 225 run - response received Response{type='ERROR', data=Index 0 out of bounds for length 0}
+2025-06-27 16:08:00 ERROR org.example.JsonProtocol.ProxyJson 150 login - Error during login: "Index 0 out of bounds for length 0" java.lang.Exception: "Index 0 out of bounds for length 0"
+	at org.example.JsonProtocol.ProxyJson.login(ProxyJson.java:140) ~[Network-1.0-SNAPSHOT.jar:?]
+	at org.example.LoginController.login(LoginController.java:63) ~[main/:?]
+	at org.example.LoginController.lambda$initialize$0(LoginController.java:51) ~[main/:?]
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:232) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:189) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49) ~[javafx-base-21.0.5-win.jar:?]
+	at javafx.event.Event.fireEvent(Event.java:198) ~[javafx-base-21.0.5-win.jar:?]
+	at javafx.scene.Node.fireEvent(Node.java:8875) ~[javafx-graphics-21.0.5-win.jar:?]
+	at javafx.scene.control.Button.fire(Button.java:203) ~[javafx-controls-21.0.5-win.jar:?]
+	at com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:207) ~[javafx-controls-21.0.5-win.jar:?]
+	at com.sun.javafx.scene.control.inputmap.InputMap.handle(InputMap.java:274) ~[javafx-controls-21.0.5-win.jar:?]
+	at com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:247) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:232) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:189) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54) ~[javafx-base-21.0.5-win.jar:?]
+	at javafx.event.Event.fireEvent(Event.java:198) ~[javafx-base-21.0.5-win.jar:?]
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3984) ~[javafx-graphics-21.0.5-win.jar:?]
+	at javafx.scene.Scene.processMouseEvent(Scene.java:1890) ~[javafx-graphics-21.0.5-win.jar:?]
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2708) ~[javafx-graphics-21.0.5-win.jar:?]
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:411) ~[javafx-graphics-21.0.5-win.jar:?]
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:301) ~[javafx-graphics-21.0.5-win.jar:?]
+	at java.security.AccessController.doPrivileged(AccessController.java:400) ~[?:?]
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:450) ~[javafx-graphics-21.0.5-win.jar:?]
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:424) ~[javafx-graphics-21.0.5-win.jar:?]
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:449) ~[javafx-graphics-21.0.5-win.jar:?]
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:551) ~[javafx-graphics-21.0.5-win.jar:?]
+	at com.sun.glass.ui.View.notifyMouse(View.java:937) ~[javafx-graphics-21.0.5-win.jar:?]
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method) ~[javafx-graphics-21.0.5-win.jar:?]
+	at com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:185) ~[javafx-graphics-21.0.5-win.jar:?]
+	at java.lang.Thread.run(Thread.java:1575) [?:?]
+
+2025-06-27 16:08:43 INFO  org.example.JsonProtocol.ProxyJson 128 login - Login attempt with username: ana
+2025-06-27 16:08:43 INFO  org.example.JsonProtocol.ProxyJson 61 initializeConnection - Connection initialized
+2025-06-27 16:08:43 INFO  org.example.JsonProtocol.ProxyJson 80 sendRequest - Sending request: Request{type='LOGIN', data=org.example.DTO.LoginDTO@58870de4}
+2025-06-27 16:08:43 INFO  org.example.JsonProtocol.ProxyJson 85 sendRequest - Request sent
+2025-06-27 16:08:44 INFO  org.example.JsonProtocol.ProxyJson$ReaderThread 218 run - Response received: {"type":"OK","data":{"poz1":0,"poz2":1,"poz3":2,"id":1}}
+2025-06-27 16:08:44 DEBUG org.example.JsonProtocol.ProxyJson$ReaderThread 225 run - response received Response{type='OK', data={poz1=0.0, poz2=1.0, poz3=2.0, id=1.0}}
+2025-06-27 16:08:44 INFO  org.example.JsonProtocol.ProxyJson 158 getClasament - PROXY: GETTING CLASAMENT
+2025-06-27 16:08:44 INFO  org.example.JsonProtocol.ProxyJson 80 sendRequest - Sending request: Request{type='LOAD', data=null}
+2025-06-27 16:08:44 INFO  org.example.JsonProtocol.ProxyJson 85 sendRequest - Request sent
+2025-06-27 16:08:44 INFO  org.example.JsonProtocol.ProxyJson$ReaderThread 218 run - Response received: {"type":"OK","data":[]}
+2025-06-27 16:08:44 DEBUG org.example.JsonProtocol.ProxyJson$ReaderThread 225 run - response received Response{type='OK', data=[]}
+2025-06-27 16:08:55 INFO  org.example.JsonProtocol.ProxyJson 107 saveMeci - PROXY: SAVING MECI
+2025-06-27 16:08:55 INFO  org.example.JsonProtocol.ProxyJson 80 sendRequest - Sending request: Request{type='OVER', data=org.example.DTO.MeciDTO@236f23fe}
+2025-06-27 16:08:55 INFO  org.example.JsonProtocol.ProxyJson 85 sendRequest - Request sent
+2025-06-27 16:08:55 INFO  org.example.JsonProtocol.ProxyJson$ReaderThread 218 run - Response received: {"type":"OK"}
+2025-06-27 16:08:55 DEBUG org.example.JsonProtocol.ProxyJson$ReaderThread 225 run - response received Response{type='OK', data=null}
+2025-06-27 16:08:55 INFO  org.example.JsonProtocol.ProxyJson$ReaderThread 218 run - Response received: {"type":"UPDATE","data":{"barcaID":1,"timestamp":"2025-06-27T16:08:44.279486","jucatorID":1,"jucatorName":"ana","scor":0}}
+2025-06-27 16:08:55 DEBUG org.example.JsonProtocol.ProxyJson$ReaderThread 225 run - response received Response{type='UPDATE', data={barcaID=1.0, timestamp=2025-06-27T16:08:44.279486, jucatorID=1.0, jucatorName=ana, scor=0.0}}
+2025-06-27 16:08:55 INFO  org.example.JsonProtocol.ProxyJson$ReaderThread 228 run - Update received from server
+2025-06-27 16:09:16 INFO  org.example.JsonProtocol.ProxyJson 195 logout - Logout attempt for client: org.example.MainWindowController@7421e6c8
+2025-06-27 16:09:16 INFO  org.example.JsonProtocol.ProxyJson 80 sendRequest - Sending request: Request{type='LOGOUT', data=org.example.DTO.LoginDTO@4a6536ec}
+2025-06-27 16:09:16 INFO  org.example.JsonProtocol.ProxyJson 85 sendRequest - Request sent
+2025-06-27 16:09:16 INFO  org.example.JsonProtocol.ProxyJson$ReaderThread 218 run - Response received: {"type":"OK"}
+2025-06-27 16:09:16 INFO  org.example.JsonProtocol.ProxyJson 75 closeConnection - Connection closed
+2025-06-27 16:09:16 DEBUG org.example.JsonProtocol.ProxyJson$ReaderThread 225 run - response received Response{type='OK', data=null}
+2025-06-27 16:09:16 INFO  org.example.JsonProtocol.ProxyJson 205 logout - Client logged out successfully
+2025-06-27 16:09:16 DEBUG org.example.LoginController$1 86 handle - Back to login window
+2025-06-27 16:13:18 INFO  org.example.JsonProtocol.ProxyJson 128 login - Login attempt with username: ioana
+2025-06-27 16:13:18 INFO  org.example.JsonProtocol.ProxyJson 61 initializeConnection - Connection initialized
+2025-06-27 16:13:18 INFO  org.example.JsonProtocol.ProxyJson 80 sendRequest - Sending request: Request{type='LOGIN', data=org.example.DTO.LoginDTO@ca299eb}
+2025-06-27 16:13:18 INFO  org.example.JsonProtocol.ProxyJson 85 sendRequest - Request sent
+2025-06-27 16:13:18 INFO  org.example.JsonProtocol.ProxyJson$ReaderThread 218 run - Response received: {"type":"ERROR","data":"Login failed"}
+2025-06-27 16:13:18 DEBUG org.example.JsonProtocol.ProxyJson$ReaderThread 225 run - response received Response{type='ERROR', data=Login failed}
+2025-06-27 16:13:18 ERROR org.example.JsonProtocol.ProxyJson 150 login - Error during login: "Login failed" java.lang.Exception: "Login failed"
+	at org.example.JsonProtocol.ProxyJson.login(ProxyJson.java:140) ~[Network-1.0-SNAPSHOT.jar:?]
+	at org.example.LoginController.login(LoginController.java:63) ~[main/:?]
+	at org.example.LoginController.lambda$initialize$0(LoginController.java:51) ~[main/:?]
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:232) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:189) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49) ~[javafx-base-21.0.5-win.jar:?]
+	at javafx.event.Event.fireEvent(Event.java:198) ~[javafx-base-21.0.5-win.jar:?]
+	at javafx.scene.Node.fireEvent(Node.java:8875) ~[javafx-graphics-21.0.5-win.jar:?]
+	at javafx.scene.control.Button.fire(Button.java:203) ~[javafx-controls-21.0.5-win.jar:?]
+	at com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:207) ~[javafx-controls-21.0.5-win.jar:?]
+	at com.sun.javafx.scene.control.inputmap.InputMap.handle(InputMap.java:274) ~[javafx-controls-21.0.5-win.jar:?]
+	at com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:247) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:232) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:189) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54) ~[javafx-base-21.0.5-win.jar:?]
+	at javafx.event.Event.fireEvent(Event.java:198) ~[javafx-base-21.0.5-win.jar:?]
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3984) ~[javafx-graphics-21.0.5-win.jar:?]
+	at javafx.scene.Scene.processMouseEvent(Scene.java:1890) ~[javafx-graphics-21.0.5-win.jar:?]
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2708) ~[javafx-graphics-21.0.5-win.jar:?]
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:411) ~[javafx-graphics-21.0.5-win.jar:?]
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:301) ~[javafx-graphics-21.0.5-win.jar:?]
+	at java.security.AccessController.doPrivileged(AccessController.java:400) ~[?:?]
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:450) ~[javafx-graphics-21.0.5-win.jar:?]
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:424) ~[javafx-graphics-21.0.5-win.jar:?]
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:449) ~[javafx-graphics-21.0.5-win.jar:?]
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:551) ~[javafx-graphics-21.0.5-win.jar:?]
+	at com.sun.glass.ui.View.notifyMouse(View.java:937) ~[javafx-graphics-21.0.5-win.jar:?]
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method) ~[javafx-graphics-21.0.5-win.jar:?]
+	at com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:185) ~[javafx-graphics-21.0.5-win.jar:?]
+	at java.lang.Thread.run(Thread.java:1575) [?:?]
+
+2025-06-27 16:13:22 INFO  org.example.JsonProtocol.ProxyJson 128 login - Login attempt with username: ana
+2025-06-27 16:13:22 INFO  org.example.JsonProtocol.ProxyJson 61 initializeConnection - Connection initialized
+2025-06-27 16:13:22 INFO  org.example.JsonProtocol.ProxyJson 80 sendRequest - Sending request: Request{type='LOGIN', data=org.example.DTO.LoginDTO@4beaed52}
+2025-06-27 16:13:22 INFO  org.example.JsonProtocol.ProxyJson 85 sendRequest - Request sent
+2025-06-27 16:13:23 INFO  org.example.JsonProtocol.ProxyJson$ReaderThread 218 run - Response received: {"type":"OK","data":{"poz1":0,"poz2":1,"poz3":2,"id":1}}
+2025-06-27 16:13:23 DEBUG org.example.JsonProtocol.ProxyJson$ReaderThread 225 run - response received Response{type='OK', data={poz1=0.0, poz2=1.0, poz3=2.0, id=1.0}}
+2025-06-27 16:13:23 INFO  org.example.JsonProtocol.ProxyJson 158 getClasament - PROXY: GETTING CLASAMENT
+2025-06-27 16:13:23 INFO  org.example.JsonProtocol.ProxyJson 80 sendRequest - Sending request: Request{type='LOAD', data=null}
+2025-06-27 16:13:23 INFO  org.example.JsonProtocol.ProxyJson 85 sendRequest - Request sent
+2025-06-27 16:13:23 INFO  org.example.JsonProtocol.ProxyJson$ReaderThread 218 run - Response received: {"type":"OK","data":[{"barcaID":1,"timestamp":"2025-06-27T16:08:44.279486","jucatorID":1,"jucatorName":"ana","scor":0}]}
+2025-06-27 16:13:23 DEBUG org.example.JsonProtocol.ProxyJson$ReaderThread 225 run - response received Response{type='OK', data=[{barcaID=1.0, timestamp=2025-06-27T16:08:44.279486, jucatorID=1.0, jucatorName=ana, scor=0.0}]}
+2025-06-27 16:13:35 INFO  org.example.JsonProtocol.ProxyJson 107 saveMeci - PROXY: SAVING MECI
+2025-06-27 16:13:35 INFO  org.example.JsonProtocol.ProxyJson 80 sendRequest - Sending request: Request{type='OVER', data=org.example.DTO.MeciDTO@771b0759}
+2025-06-27 16:13:35 INFO  org.example.JsonProtocol.ProxyJson 85 sendRequest - Request sent
+2025-06-27 16:13:35 INFO  org.example.JsonProtocol.ProxyJson$ReaderThread 218 run - Response received: {"type":"OK"}
+2025-06-27 16:13:35 DEBUG org.example.JsonProtocol.ProxyJson$ReaderThread 225 run - response received Response{type='OK', data=null}
+2025-06-27 16:13:35 INFO  org.example.JsonProtocol.ProxyJson$ReaderThread 218 run - Response received: {"type":"UPDATE","data":{"barcaID":1,"timestamp":"2025-06-27T16:13:23.012283","jucatorID":1,"jucatorName":"ana","scor":0}}
+2025-06-27 16:13:35 DEBUG org.example.JsonProtocol.ProxyJson$ReaderThread 225 run - response received Response{type='UPDATE', data={barcaID=1.0, timestamp=2025-06-27T16:13:23.012283, jucatorID=1.0, jucatorName=ana, scor=0.0}}
+2025-06-27 16:13:35 INFO  org.example.JsonProtocol.ProxyJson$ReaderThread 228 run - Update received from server
+2025-06-27 16:13:45 ERROR org.example.JsonProtocol.ProxyJson$ReaderThread 250 run - Error reading response java.net.SocketException: Connection reset
+	at sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:318) ~[?:?]
+	at sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346) ~[?:?]
+	at sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796) ~[?:?]
+	at java.net.Socket$SocketInputStream.implRead(Socket.java:1116) ~[?:?]
+	at java.net.Socket$SocketInputStream.read(Socket.java:1103) ~[?:?]
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:350) ~[?:?]
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:393) ~[?:?]
+	at sun.nio.cs.StreamDecoder.lockedRead(StreamDecoder.java:217) ~[?:?]
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:171) ~[?:?]
+	at java.io.InputStreamReader.read(InputStreamReader.java:190) ~[?:?]
+	at java.io.BufferedReader.fill(BufferedReader.java:160) ~[?:?]
+	at java.io.BufferedReader.implReadLine(BufferedReader.java:370) ~[?:?]
+	at java.io.BufferedReader.readLine(BufferedReader.java:347) ~[?:?]
+	at java.io.BufferedReader.readLine(BufferedReader.java:436) ~[?:?]
+	at org.example.JsonProtocol.ProxyJson$ReaderThread.run(ProxyJson.java:217) ~[Network-1.0-SNAPSHOT.jar:?]
+	at java.lang.Thread.run(Thread.java:1575) [?:?]
+
+2025-06-27 16:13:45 ERROR org.example.JsonProtocol.ProxyJson$ReaderThread 250 run - Error reading response java.net.SocketException: Connection reset
+	at sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:318) ~[?:?]
+	at sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346) ~[?:?]
+	at sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796) ~[?:?]
+	at java.net.Socket$SocketInputStream.implRead(Socket.java:1116) ~[?:?]
+	at java.net.Socket$SocketInputStream.read(Socket.java:1103) ~[?:?]
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:350) ~[?:?]
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:393) ~[?:?]
+	at sun.nio.cs.StreamDecoder.lockedRead(StreamDecoder.java:217) ~[?:?]
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:171) ~[?:?]
+	at java.io.InputStreamReader.read(InputStreamReader.java:190) ~[?:?]
+	at java.io.BufferedReader.fill(BufferedReader.java:160) ~[?:?]
+	at java.io.BufferedReader.implReadLine(BufferedReader.java:370) ~[?:?]
+	at java.io.BufferedReader.readLine(BufferedReader.java:347) ~[?:?]
+	at java.io.BufferedReader.readLine(BufferedReader.java:436) ~[?:?]
+	at org.example.JsonProtocol.ProxyJson$ReaderThread.run(ProxyJson.java:217) ~[Network-1.0-SNAPSHOT.jar:?]
+	at java.lang.Thread.run(Thread.java:1575) [?:?]
+
+2025-06-27 16:15:32 INFO  org.example.JsonProtocol.ProxyJson 128 login - Login attempt with username: alex
+2025-06-27 16:15:32 ERROR org.example.JsonProtocol.ProxyJson 150 login - Error during login: Error initializing connection: Connection refused: connect java.lang.Exception: Error initializing connection: Connection refused: connect
+	at org.example.JsonProtocol.ProxyJson.initializeConnection(ProxyJson.java:58) ~[Network-1.0-SNAPSHOT.jar:?]
+	at org.example.JsonProtocol.ProxyJson.login(ProxyJson.java:130) ~[Network-1.0-SNAPSHOT.jar:?]
+	at org.example.LoginController.login(LoginController.java:63) ~[main/:?]
+	at org.example.LoginController.lambda$initialize$0(LoginController.java:51) ~[main/:?]
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:232) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:189) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49) ~[javafx-base-21.0.5-win.jar:?]
+	at javafx.event.Event.fireEvent(Event.java:198) ~[javafx-base-21.0.5-win.jar:?]
+	at javafx.scene.Node.fireEvent(Node.java:8875) ~[javafx-graphics-21.0.5-win.jar:?]
+	at javafx.scene.control.Button.fire(Button.java:203) ~[javafx-controls-21.0.5-win.jar:?]
+	at com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:207) ~[javafx-controls-21.0.5-win.jar:?]
+	at com.sun.javafx.scene.control.inputmap.InputMap.handle(InputMap.java:274) ~[javafx-controls-21.0.5-win.jar:?]
+	at com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:247) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:232) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:189) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54) ~[javafx-base-21.0.5-win.jar:?]
+	at javafx.event.Event.fireEvent(Event.java:198) ~[javafx-base-21.0.5-win.jar:?]
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3984) ~[javafx-graphics-21.0.5-win.jar:?]
+	at javafx.scene.Scene.processMouseEvent(Scene.java:1890) ~[javafx-graphics-21.0.5-win.jar:?]
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2708) ~[javafx-graphics-21.0.5-win.jar:?]
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:411) ~[javafx-graphics-21.0.5-win.jar:?]
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:301) ~[javafx-graphics-21.0.5-win.jar:?]
+	at java.security.AccessController.doPrivileged(AccessController.java:400) ~[?:?]
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:450) ~[javafx-graphics-21.0.5-win.jar:?]
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:424) ~[javafx-graphics-21.0.5-win.jar:?]
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:449) ~[javafx-graphics-21.0.5-win.jar:?]
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:551) ~[javafx-graphics-21.0.5-win.jar:?]
+	at com.sun.glass.ui.View.notifyMouse(View.java:937) ~[javafx-graphics-21.0.5-win.jar:?]
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method) ~[javafx-graphics-21.0.5-win.jar:?]
+	at com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:185) ~[javafx-graphics-21.0.5-win.jar:?]
+	at java.lang.Thread.run(Thread.java:1575) [?:?]
+Caused by: java.net.ConnectException: Connection refused: connect
+	at sun.nio.ch.Net.connect0(Native Method) ~[?:?]
+	at sun.nio.ch.Net.connect(Net.java:589) ~[?:?]
+	at sun.nio.ch.Net.connect(Net.java:578) ~[?:?]
+	at sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583) ~[?:?]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[?:?]
+	at java.net.Socket.connect(Socket.java:760) ~[?:?]
+	at java.net.Socket.connect(Socket.java:695) ~[?:?]
+	at java.net.Socket.<init>(Socket.java:564) ~[?:?]
+	at java.net.Socket.<init>(Socket.java:328) ~[?:?]
+	at org.example.JsonProtocol.ProxyJson.initializeConnection(ProxyJson.java:50) ~[Network-1.0-SNAPSHOT.jar:?]
+	... 48 more
+
+2025-06-27 16:15:35 INFO  org.example.JsonProtocol.ProxyJson 128 login - Login attempt with username: alex
+2025-06-27 16:15:35 ERROR org.example.JsonProtocol.ProxyJson 150 login - Error during login: Error initializing connection: Connection refused: connect java.lang.Exception: Error initializing connection: Connection refused: connect
+	at org.example.JsonProtocol.ProxyJson.initializeConnection(ProxyJson.java:58) ~[Network-1.0-SNAPSHOT.jar:?]
+	at org.example.JsonProtocol.ProxyJson.login(ProxyJson.java:130) ~[Network-1.0-SNAPSHOT.jar:?]
+	at org.example.LoginController.login(LoginController.java:63) ~[main/:?]
+	at org.example.LoginController.lambda$initialize$0(LoginController.java:51) ~[main/:?]
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:232) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:189) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49) ~[javafx-base-21.0.5-win.jar:?]
+	at javafx.event.Event.fireEvent(Event.java:198) ~[javafx-base-21.0.5-win.jar:?]
+	at javafx.scene.Node.fireEvent(Node.java:8875) ~[javafx-graphics-21.0.5-win.jar:?]
+	at javafx.scene.control.Button.fire(Button.java:203) ~[javafx-controls-21.0.5-win.jar:?]
+	at com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:207) ~[javafx-controls-21.0.5-win.jar:?]
+	at com.sun.javafx.scene.control.inputmap.InputMap.handle(InputMap.java:274) ~[javafx-controls-21.0.5-win.jar:?]
+	at com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:247) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:232) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:189) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54) ~[javafx-base-21.0.5-win.jar:?]
+	at javafx.event.Event.fireEvent(Event.java:198) ~[javafx-base-21.0.5-win.jar:?]
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3984) ~[javafx-graphics-21.0.5-win.jar:?]
+	at javafx.scene.Scene.processMouseEvent(Scene.java:1890) ~[javafx-graphics-21.0.5-win.jar:?]
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2708) ~[javafx-graphics-21.0.5-win.jar:?]
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:411) ~[javafx-graphics-21.0.5-win.jar:?]
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:301) ~[javafx-graphics-21.0.5-win.jar:?]
+	at java.security.AccessController.doPrivileged(AccessController.java:400) ~[?:?]
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:450) ~[javafx-graphics-21.0.5-win.jar:?]
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:424) ~[javafx-graphics-21.0.5-win.jar:?]
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:449) ~[javafx-graphics-21.0.5-win.jar:?]
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:551) ~[javafx-graphics-21.0.5-win.jar:?]
+	at com.sun.glass.ui.View.notifyMouse(View.java:937) ~[javafx-graphics-21.0.5-win.jar:?]
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method) ~[javafx-graphics-21.0.5-win.jar:?]
+	at com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:185) ~[javafx-graphics-21.0.5-win.jar:?]
+	at java.lang.Thread.run(Thread.java:1575) [?:?]
+Caused by: java.net.ConnectException: Connection refused: connect
+	at sun.nio.ch.Net.connect0(Native Method) ~[?:?]
+	at sun.nio.ch.Net.connect(Net.java:589) ~[?:?]
+	at sun.nio.ch.Net.connect(Net.java:578) ~[?:?]
+	at sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583) ~[?:?]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[?:?]
+	at java.net.Socket.connect(Socket.java:760) ~[?:?]
+	at java.net.Socket.connect(Socket.java:695) ~[?:?]
+	at java.net.Socket.<init>(Socket.java:564) ~[?:?]
+	at java.net.Socket.<init>(Socket.java:328) ~[?:?]
+	at org.example.JsonProtocol.ProxyJson.initializeConnection(ProxyJson.java:50) ~[Network-1.0-SNAPSHOT.jar:?]
+	... 48 more
+
+2025-06-27 16:15:37 INFO  org.example.JsonProtocol.ProxyJson 128 login - Login attempt with username: alex
+2025-06-27 16:15:37 INFO  org.example.JsonProtocol.ProxyJson 61 initializeConnection - Connection initialized
+2025-06-27 16:15:37 INFO  org.example.JsonProtocol.ProxyJson 80 sendRequest - Sending request: Request{type='LOGIN', data=org.example.DTO.LoginDTO@26900bbc}
+2025-06-27 16:15:37 INFO  org.example.JsonProtocol.ProxyJson 85 sendRequest - Request sent
+2025-06-27 16:15:37 INFO  org.example.JsonProtocol.ProxyJson$ReaderThread 218 run - Response received: {"type":"OK","data":{"poz1":0,"poz2":1,"poz3":2,"id":1}}
+2025-06-27 16:15:37 DEBUG org.example.JsonProtocol.ProxyJson$ReaderThread 225 run - response received Response{type='OK', data={poz1=0.0, poz2=1.0, poz3=2.0, id=1.0}}
+2025-06-27 16:15:37 INFO  org.example.JsonProtocol.ProxyJson 158 getClasament - PROXY: GETTING CLASAMENT
+2025-06-27 16:15:37 INFO  org.example.JsonProtocol.ProxyJson 80 sendRequest - Sending request: Request{type='LOAD', data=null}
+2025-06-27 16:15:37 INFO  org.example.JsonProtocol.ProxyJson 85 sendRequest - Request sent
+2025-06-27 16:15:37 INFO  org.example.JsonProtocol.ProxyJson$ReaderThread 218 run - Response received: {"type":"OK","data":[{"barcaID":1,"timestamp":"2025-06-27T16:08:44.279486","jucatorID":1,"jucatorName":"ana","scor":0},{"barcaID":1,"timestamp":"2025-06-27T16:13:23.012283","jucatorID":1,"jucatorName":"ana","scor":0}]}
+2025-06-27 16:15:37 DEBUG org.example.JsonProtocol.ProxyJson$ReaderThread 225 run - response received Response{type='OK', data=[{barcaID=1.0, timestamp=2025-06-27T16:08:44.279486, jucatorID=1.0, jucatorName=ana, scor=0.0}, {barcaID=1.0, timestamp=2025-06-27T16:13:23.012283, jucatorID=1.0, jucatorName=ana, scor=0.0}]}
+2025-06-27 16:15:41 INFO  org.example.JsonProtocol.ProxyJson 107 saveMeci - PROXY: SAVING MECI
+2025-06-27 16:15:41 INFO  org.example.JsonProtocol.ProxyJson 80 sendRequest - Sending request: Request{type='OVER', data=org.example.DTO.MeciDTO@4470decc}
+2025-06-27 16:15:41 INFO  org.example.JsonProtocol.ProxyJson 85 sendRequest - Request sent
+2025-06-27 16:15:41 INFO  org.example.JsonProtocol.ProxyJson$ReaderThread 218 run - Response received: {"type":"OK"}
+2025-06-27 16:15:41 DEBUG org.example.JsonProtocol.ProxyJson$ReaderThread 225 run - response received Response{type='OK', data=null}
+2025-06-27 16:15:41 INFO  org.example.JsonProtocol.ProxyJson$ReaderThread 218 run - Response received: {"type":"UPDATE","data":{"barcaID":1,"timestamp":"2025-06-27T16:15:37.533575","jucatorID":3,"jucatorName":"alex","scor":0}}
+2025-06-27 16:15:41 DEBUG org.example.JsonProtocol.ProxyJson$ReaderThread 225 run - response received Response{type='UPDATE', data={barcaID=1.0, timestamp=2025-06-27T16:15:37.533575, jucatorID=3.0, jucatorName=alex, scor=0.0}}
+2025-06-27 16:15:41 INFO  org.example.JsonProtocol.ProxyJson$ReaderThread 228 run - Update received from server
+2025-06-27 16:15:48 INFO  org.example.JsonProtocol.ProxyJson 195 logout - Logout attempt for client: org.example.MainWindowController@4b086065
+2025-06-27 16:15:48 INFO  org.example.JsonProtocol.ProxyJson 80 sendRequest - Sending request: Request{type='LOGOUT', data=org.example.DTO.LoginDTO@307b5346}
+2025-06-27 16:15:48 INFO  org.example.JsonProtocol.ProxyJson 85 sendRequest - Request sent
+2025-06-27 16:15:48 INFO  org.example.JsonProtocol.ProxyJson$ReaderThread 218 run - Response received: {"type":"OK"}
+2025-06-27 16:15:48 INFO  org.example.JsonProtocol.ProxyJson 75 closeConnection - Connection closed
+2025-06-27 16:15:48 DEBUG org.example.JsonProtocol.ProxyJson$ReaderThread 225 run - response received Response{type='OK', data=null}
+2025-06-27 16:15:48 INFO  org.example.JsonProtocol.ProxyJson 205 logout - Client logged out successfully
+2025-06-27 16:15:48 DEBUG org.example.LoginController$1 86 handle - Back to login window
+2025-06-27 16:20:48 INFO  org.example.JsonProtocol.ProxyJson 128 login - Login attempt with username: maria
+2025-06-27 16:20:48 INFO  org.example.JsonProtocol.ProxyJson 61 initializeConnection - Connection initialized
+2025-06-27 16:20:48 INFO  org.example.JsonProtocol.ProxyJson 80 sendRequest - Sending request: Request{type='LOGIN', data=org.example.DTO.LoginDTO@1acc7178}
+2025-06-27 16:20:48 INFO  org.example.JsonProtocol.ProxyJson 85 sendRequest - Request sent
+2025-06-27 16:20:49 INFO  org.example.JsonProtocol.ProxyJson$ReaderThread 218 run - Response received: {"type":"OK","data":{"poz1":0,"poz2":1,"poz3":2,"id":1}}
+2025-06-27 16:20:49 DEBUG org.example.JsonProtocol.ProxyJson$ReaderThread 225 run - response received Response{type='OK', data={poz1=0.0, poz2=1.0, poz3=2.0, id=1.0}}
+2025-06-27 16:20:49 INFO  org.example.JsonProtocol.ProxyJson 158 getClasament - PROXY: GETTING CLASAMENT
+2025-06-27 16:20:49 INFO  org.example.JsonProtocol.ProxyJson 80 sendRequest - Sending request: Request{type='LOAD', data=null}
+2025-06-27 16:20:49 INFO  org.example.JsonProtocol.ProxyJson 85 sendRequest - Request sent
+2025-06-27 16:20:49 INFO  org.example.JsonProtocol.ProxyJson$ReaderThread 218 run - Response received: {"type":"OK","data":[{"barcaID":1,"timestamp":"2025-06-27T16:08:44.279486","jucatorID":1,"jucatorName":"ana","scor":0},{"barcaID":1,"timestamp":"2025-06-27T16:13:23.012283","jucatorID":1,"jucatorName":"ana","scor":0},{"barcaID":1,"timestamp":"2025-06-27T16:15:37.533575","jucatorID":3,"jucatorName":"alex","scor":0}]}
+2025-06-27 16:20:49 DEBUG org.example.JsonProtocol.ProxyJson$ReaderThread 225 run - response received Response{type='OK', data=[{barcaID=1.0, timestamp=2025-06-27T16:08:44.279486, jucatorID=1.0, jucatorName=ana, scor=0.0}, {barcaID=1.0, timestamp=2025-06-27T16:13:23.012283, jucatorID=1.0, jucatorName=ana, scor=0.0}, {barcaID=1.0, timestamp=2025-06-27T16:15:37.533575, jucatorID=3.0, jucatorName=alex, scor=0.0}]}
+2025-06-27 16:20:57 INFO  org.example.JsonProtocol.ProxyJson 107 saveMeci - PROXY: SAVING MECI
+2025-06-27 16:20:57 INFO  org.example.JsonProtocol.ProxyJson 80 sendRequest - Sending request: Request{type='OVER', data=org.example.DTO.MeciDTO@4e9d61ad}
+2025-06-27 16:20:57 INFO  org.example.JsonProtocol.ProxyJson 85 sendRequest - Request sent
+2025-06-27 16:20:57 INFO  org.example.JsonProtocol.ProxyJson$ReaderThread 218 run - Response received: {"type":"OK"}
+2025-06-27 16:20:57 DEBUG org.example.JsonProtocol.ProxyJson$ReaderThread 225 run - response received Response{type='OK', data=null}
+2025-06-27 16:20:57 INFO  org.example.JsonProtocol.ProxyJson$ReaderThread 218 run - Response received: {"type":"UPDATE","data":{"barcaID":1,"timestamp":"2025-06-27T16:20:49.107612","jucatorID":2,"jucatorName":"maria","scor":7}}
+2025-06-27 16:20:57 DEBUG org.example.JsonProtocol.ProxyJson$ReaderThread 225 run - response received Response{type='UPDATE', data={barcaID=1.0, timestamp=2025-06-27T16:20:49.107612, jucatorID=2.0, jucatorName=maria, scor=7.0}}
+2025-06-27 16:20:57 INFO  org.example.JsonProtocol.ProxyJson$ReaderThread 228 run - Update received from server
+2025-06-27 16:22:00 INFO  org.example.JsonProtocol.ProxyJson 128 login - Login attempt with username: ana
+2025-06-27 16:22:00 INFO  org.example.JsonProtocol.ProxyJson 61 initializeConnection - Connection initialized
+2025-06-27 16:22:00 INFO  org.example.JsonProtocol.ProxyJson 80 sendRequest - Sending request: Request{type='LOGIN', data=org.example.DTO.LoginDTO@3e1193a3}
+2025-06-27 16:22:00 INFO  org.example.JsonProtocol.ProxyJson 85 sendRequest - Request sent
+2025-06-27 16:22:01 INFO  org.example.JsonProtocol.ProxyJson$ReaderThread 218 run - Response received: {"type":"OK","data":{"poz1":0,"poz2":1,"poz3":2,"id":1}}
+2025-06-27 16:22:01 DEBUG org.example.JsonProtocol.ProxyJson$ReaderThread 225 run - response received Response{type='OK', data={poz1=0.0, poz2=1.0, poz3=2.0, id=1.0}}
+2025-06-27 16:22:01 INFO  org.example.JsonProtocol.ProxyJson 158 getClasament - PROXY: GETTING CLASAMENT
+2025-06-27 16:22:01 INFO  org.example.JsonProtocol.ProxyJson 80 sendRequest - Sending request: Request{type='LOAD', data=null}
+2025-06-27 16:22:01 INFO  org.example.JsonProtocol.ProxyJson 85 sendRequest - Request sent
+2025-06-27 16:22:01 INFO  org.example.JsonProtocol.ProxyJson$ReaderThread 218 run - Response received: {"type":"OK","data":[{"barcaID":1,"timestamp":"2025-06-27T16:08:44.279486","jucatorID":1,"jucatorName":"ana","scor":0},{"barcaID":1,"timestamp":"2025-06-27T16:13:23.012283","jucatorID":1,"jucatorName":"ana","scor":0},{"barcaID":1,"timestamp":"2025-06-27T16:15:37.533575","jucatorID":3,"jucatorName":"alex","scor":0},{"barcaID":1,"timestamp":"2025-06-27T16:20:49.107612","jucatorID":2,"jucatorName":"maria","scor":7}]}
+2025-06-27 16:22:01 DEBUG org.example.JsonProtocol.ProxyJson$ReaderThread 225 run - response received Response{type='OK', data=[{barcaID=1.0, timestamp=2025-06-27T16:08:44.279486, jucatorID=1.0, jucatorName=ana, scor=0.0}, {barcaID=1.0, timestamp=2025-06-27T16:13:23.012283, jucatorID=1.0, jucatorName=ana, scor=0.0}, {barcaID=1.0, timestamp=2025-06-27T16:15:37.533575, jucatorID=3.0, jucatorName=alex, scor=0.0}, {barcaID=1.0, timestamp=2025-06-27T16:20:49.107612, jucatorID=2.0, jucatorName=maria, scor=7.0}]}
+2025-06-27 16:22:13 INFO  org.example.JsonProtocol.ProxyJson 107 saveMeci - PROXY: SAVING MECI
+2025-06-27 16:22:13 INFO  org.example.JsonProtocol.ProxyJson 80 sendRequest - Sending request: Request{type='OVER', data=org.example.DTO.MeciDTO@bd7bf2f}
+2025-06-27 16:22:13 INFO  org.example.JsonProtocol.ProxyJson 85 sendRequest - Request sent
+2025-06-27 16:22:13 INFO  org.example.JsonProtocol.ProxyJson$ReaderThread 218 run - Response received: {"type":"OK"}
+2025-06-27 16:22:13 DEBUG org.example.JsonProtocol.ProxyJson$ReaderThread 225 run - response received Response{type='OK', data=null}
+2025-06-27 16:22:13 INFO  org.example.JsonProtocol.ProxyJson$ReaderThread 218 run - Response received: {"type":"UPDATE","data":{"barcaID":1,"timestamp":"2025-06-27T16:22:01.247616","jucatorID":1,"jucatorName":"ana","scor":7}}
+2025-06-27 16:22:13 DEBUG org.example.JsonProtocol.ProxyJson$ReaderThread 225 run - response received Response{type='UPDATE', data={barcaID=1.0, timestamp=2025-06-27T16:22:01.247616, jucatorID=1.0, jucatorName=ana, scor=7.0}}
+2025-06-27 16:22:13 INFO  org.example.JsonProtocol.ProxyJson$ReaderThread 228 run - Update received from server
+2025-06-27 16:22:16 INFO  org.example.JsonProtocol.ProxyJson 195 logout - Logout attempt for client: org.example.MainWindowController@6d3e5c0b
+2025-06-27 16:22:16 INFO  org.example.JsonProtocol.ProxyJson 80 sendRequest - Sending request: Request{type='LOGOUT', data=org.example.DTO.LoginDTO@378ad83}
+2025-06-27 16:22:16 INFO  org.example.JsonProtocol.ProxyJson 85 sendRequest - Request sent
+2025-06-27 16:22:16 INFO  org.example.JsonProtocol.ProxyJson$ReaderThread 218 run - Response received: {"type":"OK"}
+2025-06-27 16:22:16 DEBUG org.example.JsonProtocol.ProxyJson$ReaderThread 225 run - response received Response{type='OK', data=null}
+2025-06-27 16:22:16 INFO  org.example.JsonProtocol.ProxyJson 75 closeConnection - Connection closed
+2025-06-27 16:22:16 INFO  org.example.JsonProtocol.ProxyJson 205 logout - Client logged out successfully
+2025-06-27 16:22:16 DEBUG org.example.LoginController$1 86 handle - Back to login window
+2025-06-27 16:24:01 INFO  org.example.JsonProtocol.ProxyJson 128 login - Login attempt with username: ana
+2025-06-27 16:24:01 INFO  org.example.JsonProtocol.ProxyJson 61 initializeConnection - Connection initialized
+2025-06-27 16:24:01 INFO  org.example.JsonProtocol.ProxyJson 80 sendRequest - Sending request: Request{type='LOGIN', data=org.example.DTO.LoginDTO@6f1d7363}
+2025-06-27 16:24:01 INFO  org.example.JsonProtocol.ProxyJson 85 sendRequest - Request sent
+2025-06-27 16:24:01 INFO  org.example.JsonProtocol.ProxyJson$ReaderThread 218 run - Response received: {"type":"OK","data":{"poz1":0,"poz2":1,"poz3":2,"id":1}}
+2025-06-27 16:24:01 DEBUG org.example.JsonProtocol.ProxyJson$ReaderThread 225 run - response received Response{type='OK', data={poz1=0.0, poz2=1.0, poz3=2.0, id=1.0}}
+2025-06-27 16:24:01 INFO  org.example.JsonProtocol.ProxyJson 158 getClasament - PROXY: GETTING CLASAMENT
+2025-06-27 16:24:01 INFO  org.example.JsonProtocol.ProxyJson 80 sendRequest - Sending request: Request{type='LOAD', data=null}
+2025-06-27 16:24:01 INFO  org.example.JsonProtocol.ProxyJson 85 sendRequest - Request sent
+2025-06-27 16:24:01 INFO  org.example.JsonProtocol.ProxyJson$ReaderThread 218 run - Response received: {"type":"OK","data":[{"barcaID":1,"timestamp":"2025-06-27T16:20:49.107612","jucatorID":2,"jucatorName":"maria","scor":7},{"barcaID":1,"timestamp":"2025-06-27T16:22:01.247616","jucatorID":1,"jucatorName":"ana","scor":7},{"barcaID":1,"timestamp":"2025-06-27T16:08:44.279486","jucatorID":1,"jucatorName":"ana","scor":0},{"barcaID":1,"timestamp":"2025-06-27T16:13:23.012283","jucatorID":1,"jucatorName":"ana","scor":0},{"barcaID":1,"timestamp":"2025-06-27T16:15:37.533575","jucatorID":3,"jucatorName":"alex","scor":0}]}
+2025-06-27 16:24:01 DEBUG org.example.JsonProtocol.ProxyJson$ReaderThread 225 run - response received Response{type='OK', data=[{barcaID=1.0, timestamp=2025-06-27T16:20:49.107612, jucatorID=2.0, jucatorName=maria, scor=7.0}, {barcaID=1.0, timestamp=2025-06-27T16:22:01.247616, jucatorID=1.0, jucatorName=ana, scor=7.0}, {barcaID=1.0, timestamp=2025-06-27T16:08:44.279486, jucatorID=1.0, jucatorName=ana, scor=0.0}, {barcaID=1.0, timestamp=2025-06-27T16:13:23.012283, jucatorID=1.0, jucatorName=ana, scor=0.0}, {barcaID=1.0, timestamp=2025-06-27T16:15:37.533575, jucatorID=3.0, jucatorName=alex, scor=0.0}]}
+2025-06-27 16:24:09 INFO  org.example.JsonProtocol.ProxyJson 107 saveMeci - PROXY: SAVING MECI
+2025-06-27 16:24:09 INFO  org.example.JsonProtocol.ProxyJson 80 sendRequest - Sending request: Request{type='OVER', data=org.example.DTO.MeciDTO@60caf97f}
+2025-06-27 16:24:09 INFO  org.example.JsonProtocol.ProxyJson 85 sendRequest - Request sent
+2025-06-27 16:24:09 INFO  org.example.JsonProtocol.ProxyJson$ReaderThread 218 run - Response received: {"type":"OK"}
+2025-06-27 16:24:09 DEBUG org.example.JsonProtocol.ProxyJson$ReaderThread 225 run - response received Response{type='OK', data=null}
+2025-06-27 16:24:09 INFO  org.example.JsonProtocol.ProxyJson$ReaderThread 218 run - Response received: {"type":"UPDATE","data":{"barcaID":1,"timestamp":"2025-06-27T16:24:01.546512","jucatorID":1,"jucatorName":"ana","scor":7}}
+2025-06-27 16:24:09 DEBUG org.example.JsonProtocol.ProxyJson$ReaderThread 225 run - response received Response{type='UPDATE', data={barcaID=1.0, timestamp=2025-06-27T16:24:01.546512, jucatorID=1.0, jucatorName=ana, scor=7.0}}
+2025-06-27 16:24:09 INFO  org.example.JsonProtocol.ProxyJson$ReaderThread 228 run - Update received from server
+2025-06-27 16:24:14 INFO  org.example.JsonProtocol.ProxyJson 195 logout - Logout attempt for client: org.example.MainWindowController@6dbd2d50
+2025-06-27 16:24:14 INFO  org.example.JsonProtocol.ProxyJson 80 sendRequest - Sending request: Request{type='LOGOUT', data=org.example.DTO.LoginDTO@ca91752}
+2025-06-27 16:24:14 INFO  org.example.JsonProtocol.ProxyJson 85 sendRequest - Request sent
+2025-06-27 16:24:14 INFO  org.example.JsonProtocol.ProxyJson$ReaderThread 218 run - Response received: {"type":"OK"}
+2025-06-27 16:24:14 DEBUG org.example.JsonProtocol.ProxyJson$ReaderThread 225 run - response received Response{type='OK', data=null}
+2025-06-27 16:24:14 INFO  org.example.JsonProtocol.ProxyJson 75 closeConnection - Connection closed
+2025-06-27 16:24:14 INFO  org.example.JsonProtocol.ProxyJson 205 logout - Client logged out successfully
+2025-06-27 16:24:14 DEBUG org.example.LoginController$1 86 handle - Back to login window
+2025-06-27 16:24:25 INFO  org.example.JsonProtocol.ProxyJson 128 login - Login attempt with username: alex
+2025-06-27 16:24:25 ERROR org.example.JsonProtocol.ProxyJson 150 login - Error during login: Error initializing connection: Connection refused: connect java.lang.Exception: Error initializing connection: Connection refused: connect
+	at org.example.JsonProtocol.ProxyJson.initializeConnection(ProxyJson.java:58) ~[Network-1.0-SNAPSHOT.jar:?]
+	at org.example.JsonProtocol.ProxyJson.login(ProxyJson.java:130) ~[Network-1.0-SNAPSHOT.jar:?]
+	at org.example.LoginController.login(LoginController.java:63) ~[main/:?]
+	at org.example.LoginController.lambda$initialize$0(LoginController.java:51) ~[main/:?]
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:232) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:189) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49) ~[javafx-base-21.0.5-win.jar:?]
+	at javafx.event.Event.fireEvent(Event.java:198) ~[javafx-base-21.0.5-win.jar:?]
+	at javafx.scene.Node.fireEvent(Node.java:8875) ~[javafx-graphics-21.0.5-win.jar:?]
+	at javafx.scene.control.Button.fire(Button.java:203) ~[javafx-controls-21.0.5-win.jar:?]
+	at com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:207) ~[javafx-controls-21.0.5-win.jar:?]
+	at com.sun.javafx.scene.control.inputmap.InputMap.handle(InputMap.java:274) ~[javafx-controls-21.0.5-win.jar:?]
+	at com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:247) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:232) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:189) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54) ~[javafx-base-21.0.5-win.jar:?]
+	at javafx.event.Event.fireEvent(Event.java:198) ~[javafx-base-21.0.5-win.jar:?]
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3984) ~[javafx-graphics-21.0.5-win.jar:?]
+	at javafx.scene.Scene.processMouseEvent(Scene.java:1890) ~[javafx-graphics-21.0.5-win.jar:?]
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2708) ~[javafx-graphics-21.0.5-win.jar:?]
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:411) ~[javafx-graphics-21.0.5-win.jar:?]
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:301) ~[javafx-graphics-21.0.5-win.jar:?]
+	at java.security.AccessController.doPrivileged(AccessController.java:400) ~[?:?]
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:450) ~[javafx-graphics-21.0.5-win.jar:?]
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:424) ~[javafx-graphics-21.0.5-win.jar:?]
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:449) ~[javafx-graphics-21.0.5-win.jar:?]
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:551) ~[javafx-graphics-21.0.5-win.jar:?]
+	at com.sun.glass.ui.View.notifyMouse(View.java:937) ~[javafx-graphics-21.0.5-win.jar:?]
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method) ~[javafx-graphics-21.0.5-win.jar:?]
+	at com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:185) ~[javafx-graphics-21.0.5-win.jar:?]
+	at java.lang.Thread.run(Thread.java:1575) [?:?]
+Caused by: java.net.ConnectException: Connection refused: connect
+	at sun.nio.ch.Net.connect0(Native Method) ~[?:?]
+	at sun.nio.ch.Net.connect(Net.java:589) ~[?:?]
+	at sun.nio.ch.Net.connect(Net.java:578) ~[?:?]
+	at sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583) ~[?:?]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[?:?]
+	at java.net.Socket.connect(Socket.java:760) ~[?:?]
+	at java.net.Socket.connect(Socket.java:695) ~[?:?]
+	at java.net.Socket.<init>(Socket.java:564) ~[?:?]
+	at java.net.Socket.<init>(Socket.java:328) ~[?:?]
+	at org.example.JsonProtocol.ProxyJson.initializeConnection(ProxyJson.java:50) ~[Network-1.0-SNAPSHOT.jar:?]
+	... 48 more
+
+2025-06-27 16:24:29 INFO  org.example.JsonProtocol.ProxyJson 128 login - Login attempt with username: alex
+2025-06-27 16:24:29 INFO  org.example.JsonProtocol.ProxyJson 61 initializeConnection - Connection initialized
+2025-06-27 16:24:29 INFO  org.example.JsonProtocol.ProxyJson 80 sendRequest - Sending request: Request{type='LOGIN', data=org.example.DTO.LoginDTO@2119a7e1}
+2025-06-27 16:24:29 INFO  org.example.JsonProtocol.ProxyJson 85 sendRequest - Request sent
+2025-06-27 16:24:29 INFO  org.example.JsonProtocol.ProxyJson$ReaderThread 218 run - Response received: {"type":"OK","data":{"poz1":0,"poz2":1,"poz3":2,"id":1}}
+2025-06-27 16:24:29 DEBUG org.example.JsonProtocol.ProxyJson$ReaderThread 225 run - response received Response{type='OK', data={poz1=0.0, poz2=1.0, poz3=2.0, id=1.0}}
+2025-06-27 16:24:29 INFO  org.example.JsonProtocol.ProxyJson 158 getClasament - PROXY: GETTING CLASAMENT
+2025-06-27 16:24:29 INFO  org.example.JsonProtocol.ProxyJson 80 sendRequest - Sending request: Request{type='LOAD', data=null}
+2025-06-27 16:24:29 INFO  org.example.JsonProtocol.ProxyJson 85 sendRequest - Request sent
+2025-06-27 16:24:29 INFO  org.example.JsonProtocol.ProxyJson$ReaderThread 218 run - Response received: {"type":"OK","data":[{"barcaID":1,"timestamp":"2025-06-27T16:20:49.107612","jucatorID":2,"jucatorName":"maria","scor":7},{"barcaID":1,"timestamp":"2025-06-27T16:22:01.247616","jucatorID":1,"jucatorName":"ana","scor":7},{"barcaID":1,"timestamp":"2025-06-27T16:24:01.546512","jucatorID":1,"jucatorName":"ana","scor":7},{"barcaID":1,"timestamp":"2025-06-27T16:08:44.279486","jucatorID":1,"jucatorName":"ana","scor":0},{"barcaID":1,"timestamp":"2025-06-27T16:13:23.012283","jucatorID":1,"jucatorName":"ana","scor":0},{"barcaID":1,"timestamp":"2025-06-27T16:15:37.533575","jucatorID":3,"jucatorName":"alex","scor":0}]}
+2025-06-27 16:24:29 DEBUG org.example.JsonProtocol.ProxyJson$ReaderThread 225 run - response received Response{type='OK', data=[{barcaID=1.0, timestamp=2025-06-27T16:20:49.107612, jucatorID=2.0, jucatorName=maria, scor=7.0}, {barcaID=1.0, timestamp=2025-06-27T16:22:01.247616, jucatorID=1.0, jucatorName=ana, scor=7.0}, {barcaID=1.0, timestamp=2025-06-27T16:24:01.546512, jucatorID=1.0, jucatorName=ana, scor=7.0}, {barcaID=1.0, timestamp=2025-06-27T16:08:44.279486, jucatorID=1.0, jucatorName=ana, scor=0.0}, {barcaID=1.0, timestamp=2025-06-27T16:13:23.012283, jucatorID=1.0, jucatorName=ana, scor=0.0}, {barcaID=1.0, timestamp=2025-06-27T16:15:37.533575, jucatorID=3.0, jucatorName=alex, scor=0.0}]}
+2025-06-27 16:24:31 INFO  org.example.JsonProtocol.ProxyJson 107 saveMeci - PROXY: SAVING MECI
+2025-06-27 16:24:31 INFO  org.example.JsonProtocol.ProxyJson 80 sendRequest - Sending request: Request{type='OVER', data=org.example.DTO.MeciDTO@41207019}
+2025-06-27 16:24:31 INFO  org.example.JsonProtocol.ProxyJson 85 sendRequest - Request sent
+2025-06-27 16:24:31 INFO  org.example.JsonProtocol.ProxyJson$ReaderThread 218 run - Response received: {"type":"OK"}
+2025-06-27 16:24:31 DEBUG org.example.JsonProtocol.ProxyJson$ReaderThread 225 run - response received Response{type='OK', data=null}
+2025-06-27 16:24:31 INFO  org.example.JsonProtocol.ProxyJson$ReaderThread 218 run - Response received: {"type":"UPDATE","data":{"barcaID":1,"timestamp":"2025-06-27T16:24:29.509753","jucatorID":3,"jucatorName":"alex","scor":-9}}
+2025-06-27 16:24:31 DEBUG org.example.JsonProtocol.ProxyJson$ReaderThread 225 run - response received Response{type='UPDATE', data={barcaID=1.0, timestamp=2025-06-27T16:24:29.509753, jucatorID=3.0, jucatorName=alex, scor=-9.0}}
+2025-06-27 16:24:31 INFO  org.example.JsonProtocol.ProxyJson$ReaderThread 228 run - Update received from server
+2025-06-27 22:45:32 INFO  org.example.JsonProtocol.ProxyJson 128 login - Login attempt with username: ana
+2025-06-27 22:45:32 INFO  org.example.JsonProtocol.ProxyJson 61 initializeConnection - Connection initialized
+2025-06-27 22:45:32 INFO  org.example.JsonProtocol.ProxyJson 80 sendRequest - Sending request: Request{type='LOGIN', data=org.example.DTO.LoginDTO@6f63c883}
+2025-06-27 22:45:32 INFO  org.example.JsonProtocol.ProxyJson 85 sendRequest - Request sent
+2025-06-27 22:45:33 INFO  org.example.JsonProtocol.ProxyJson$ReaderThread 218 run - Response received: {"type":"ERROR","data":"JDBC exception executing SQL [select j1_0.jucator,j1_0.id,j1_0.barca,b1_0.id,b1_0.poz1,b1_0.poz2,b1_0.poz3,j1_0.scor,j1_0.timestamp from meciuri j1_0 left join barci b1_0 on b1_0.id\u003dj1_0.barca where j1_0.jucator\u003d?] [ERROR: column j1_0.barca does not exist\n  Position: 153] [n/a]"}
+2025-06-27 22:45:33 DEBUG org.example.JsonProtocol.ProxyJson$ReaderThread 225 run - response received Response{type='ERROR', data=JDBC exception executing SQL [select j1_0.jucator,j1_0.id,j1_0.barca,b1_0.id,b1_0.poz1,b1_0.poz2,b1_0.poz3,j1_0.scor,j1_0.timestamp from meciuri j1_0 left join barci b1_0 on b1_0.id=j1_0.barca where j1_0.jucator=?] [ERROR: column j1_0.barca does not exist
+  Position: 153] [n/a]}
+2025-06-27 22:45:33 ERROR org.example.JsonProtocol.ProxyJson 150 login - Error during login: "JDBC exception executing SQL [select j1_0.jucator,j1_0.id,j1_0.barca,b1_0.id,b1_0.poz1,b1_0.poz2,b1_0.poz3,j1_0.scor,j1_0.timestamp from meciuri j1_0 left join barci b1_0 on b1_0.id\u003dj1_0.barca where j1_0.jucator\u003d?] [ERROR: column j1_0.barca does not exist\n  Position: 153] [n/a]" java.lang.Exception: "JDBC exception executing SQL [select j1_0.jucator,j1_0.id,j1_0.barca,b1_0.id,b1_0.poz1,b1_0.poz2,b1_0.poz3,j1_0.scor,j1_0.timestamp from meciuri j1_0 left join barci b1_0 on b1_0.id\u003dj1_0.barca where j1_0.jucator\u003d?] [ERROR: column j1_0.barca does not exist\n  Position: 153] [n/a]"
+	at org.example.JsonProtocol.ProxyJson.login(ProxyJson.java:140) ~[Network-1.0-SNAPSHOT.jar:?]
+	at org.example.LoginController.login(LoginController.java:63) ~[main/:?]
+	at org.example.LoginController.lambda$initialize$0(LoginController.java:51) ~[main/:?]
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:232) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:189) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49) ~[javafx-base-21.0.5-win.jar:?]
+	at javafx.event.Event.fireEvent(Event.java:198) ~[javafx-base-21.0.5-win.jar:?]
+	at javafx.scene.Node.fireEvent(Node.java:8875) ~[javafx-graphics-21.0.5-win.jar:?]
+	at javafx.scene.control.Button.fire(Button.java:203) ~[javafx-controls-21.0.5-win.jar:?]
+	at com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:207) ~[javafx-controls-21.0.5-win.jar:?]
+	at com.sun.javafx.scene.control.inputmap.InputMap.handle(InputMap.java:274) ~[javafx-controls-21.0.5-win.jar:?]
+	at com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:247) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:232) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:189) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74) ~[javafx-base-21.0.5-win.jar:?]
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54) ~[javafx-base-21.0.5-win.jar:?]
+	at javafx.event.Event.fireEvent(Event.java:198) ~[javafx-base-21.0.5-win.jar:?]
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3984) ~[javafx-graphics-21.0.5-win.jar:?]
+	at javafx.scene.Scene.processMouseEvent(Scene.java:1890) ~[javafx-graphics-21.0.5-win.jar:?]
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2708) ~[javafx-graphics-21.0.5-win.jar:?]
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:411) ~[javafx-graphics-21.0.5-win.jar:?]
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:301) ~[javafx-graphics-21.0.5-win.jar:?]
+	at java.security.AccessController.doPrivileged(Unknown Source) ~[?:?]
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:450) ~[javafx-graphics-21.0.5-win.jar:?]
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:424) ~[javafx-graphics-21.0.5-win.jar:?]
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:449) ~[javafx-graphics-21.0.5-win.jar:?]
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:551) ~[javafx-graphics-21.0.5-win.jar:?]
+	at com.sun.glass.ui.View.notifyMouse(View.java:937) ~[javafx-graphics-21.0.5-win.jar:?]
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method) ~[javafx-graphics-21.0.5-win.jar:?]
+	at com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:185) ~[javafx-graphics-21.0.5-win.jar:?]
+	at java.lang.Thread.run(Unknown Source) [?:?]
+
+2025-06-27 22:47:09 INFO  org.example.JsonProtocol.ProxyJson 128 login - Login attempt with username: ana
+2025-06-27 22:47:09 INFO  org.example.JsonProtocol.ProxyJson 61 initializeConnection - Connection initialized
+2025-06-27 22:47:09 INFO  org.example.JsonProtocol.ProxyJson 80 sendRequest - Sending request: Request{type='LOGIN', data=org.example.DTO.LoginDTO@2b0ad37c}
+2025-06-27 22:47:09 INFO  org.example.JsonProtocol.ProxyJson 85 sendRequest - Request sent
+2025-06-27 22:47:10 INFO  org.example.JsonProtocol.ProxyJson$ReaderThread 218 run - Response received: {"type":"OK","data":{"poz1":0,"poz2":1,"poz3":2,"id":1}}
+2025-06-27 22:47:10 DEBUG org.example.JsonProtocol.ProxyJson$ReaderThread 225 run - response received Response{type='OK', data={poz1=0.0, poz2=1.0, poz3=2.0, id=1.0}}
+2025-06-27 22:47:10 INFO  org.example.JsonProtocol.ProxyJson 158 getClasament - PROXY: GETTING CLASAMENT
+2025-06-27 22:47:10 INFO  org.example.JsonProtocol.ProxyJson 80 sendRequest - Sending request: Request{type='LOAD', data=null}
+2025-06-27 22:47:10 INFO  org.example.JsonProtocol.ProxyJson 85 sendRequest - Request sent
+2025-06-27 22:47:10 INFO  org.example.JsonProtocol.ProxyJson$ReaderThread 218 run - Response received: {"type":"OK","data":[]}
+2025-06-27 22:47:10 DEBUG org.example.JsonProtocol.ProxyJson$ReaderThread 225 run - response received Response{type='OK', data=[]}
+2025-06-27 22:47:12 INFO  org.example.JsonProtocol.ProxyJson 107 saveMeci - PROXY: SAVING MECI
+2025-06-27 22:47:12 INFO  org.example.JsonProtocol.ProxyJson 80 sendRequest - Sending request: Request{type='OVER', data=org.example.DTO.MeciDTO@21298be5}
+2025-06-27 22:47:12 INFO  org.example.JsonProtocol.ProxyJson 85 sendRequest - Request sent
+2025-06-27 22:47:12 INFO  org.example.JsonProtocol.ProxyJson$ReaderThread 218 run - Response received: {"type":"OK"}
+2025-06-27 22:47:12 DEBUG org.example.JsonProtocol.ProxyJson$ReaderThread 225 run - response received Response{type='OK', data=null}
+2025-06-27 22:47:12 INFO  org.example.JsonProtocol.ProxyJson$ReaderThread 218 run - Response received: {"type":"UPDATE","data":{"barcaID":1,"timestamp":"2025-06-27T22:47:10.083612","jucatorID":1,"jucatorName":"ana","scor":15}}
+2025-06-27 22:47:12 DEBUG org.example.JsonProtocol.ProxyJson$ReaderThread 225 run - response received Response{type='UPDATE', data={barcaID=1.0, timestamp=2025-06-27T22:47:10.083612, jucatorID=1.0, jucatorName=ana, scor=15.0}}
+2025-06-27 22:47:12 INFO  org.example.JsonProtocol.ProxyJson$ReaderThread 228 run - Update received from server
+2025-06-27 22:47:30 INFO  org.example.JsonProtocol.ProxyJson 195 logout - Logout attempt for client: org.example.MainWindowController@5624d43b
+2025-06-27 22:47:30 INFO  org.example.JsonProtocol.ProxyJson 80 sendRequest - Sending request: Request{type='LOGOUT', data=org.example.DTO.LoginDTO@dc9197a}
+2025-06-27 22:47:30 INFO  org.example.JsonProtocol.ProxyJson 85 sendRequest - Request sent
+2025-06-27 22:47:30 INFO  org.example.JsonProtocol.ProxyJson$ReaderThread 218 run - Response received: {"type":"OK"}
+2025-06-27 22:47:30 INFO  org.example.JsonProtocol.ProxyJson 75 closeConnection - Connection closed
+2025-06-27 22:47:30 DEBUG org.example.JsonProtocol.ProxyJson$ReaderThread 225 run - response received Response{type='OK', data=null}
+2025-06-27 22:47:30 INFO  org.example.JsonProtocol.ProxyJson 205 logout - Client logged out successfully
+2025-06-27 22:47:30 DEBUG org.example.LoginController$1 86 handle - Back to login window
